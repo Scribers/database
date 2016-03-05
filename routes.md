@@ -198,3 +198,35 @@ JSON with
 - status: holding a string representing the status [successful|failure].
 - content: if successful, a dictionary holding the jobtype data requested.
 
+## ROMEv3 access all the items
+
+~~~
+/romev3
+~~~
+
+## ROMEv3 access an item by its id.
+~~~
+/romev3byid/<id>
+~~~
+
+**Url parameter**
+- id: the id of the romev3 resource.
+
+**Response**
+
+JSON with
+- status: holding a string representing the status [successful|failure].
+- content: if successful, a dictionary holding the romev3 data requested.
+
+## ROMEv3 access an item by its code
+~~~
+/romev3bycode/<code>
+~~~
+**Url parameter**
+- code: the code of the romev3 resource.
+
+**Response**
+
+JSON with
+- status: holding a string representing the status [successful|failure].
+- content: if successful, a dictionary holding the romev3 data requested.
