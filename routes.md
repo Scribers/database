@@ -74,6 +74,58 @@ JSON with
 - status: holding a string representing the status [successful|failure].
 - id: if successful, the id of the application created.
 
+## Create a cv
+
+~~~
+/cvs/create
+~~~
+
+**Requested attributes**
+- firstname
+- lastname
+- age
+- nationality
+- user_id
+
+**Response**
+
+JSON with
+- status: holding a string representing the status [successful|failure].
+- id: if successful, the id of the cv created.
+
+
+## Create a formation
+
+~~~
+/formations/create
+~~~
+
+**Requested attributes**
+- cv_id
+- description
+- begin: a date **WARNING format: yyyy-mm-dd**.
+- end: a date **WARNING format: yyyy-mm-dd**.
+
+JSON with
+- status: holding a string representing the status [successful|failure].
+- id: if successful, the id of the formation created.
+
+## Create an experience
+
+~~~
+/experiences/create
+~~~
+
+**Requested attributes**
+- cv_id
+- description
+- begin: a date **WARNING format: yyyy-mm-dd**.
+- end: a date **WARNING format: yyyy-mm-dd**.
+
+JSON with
+- status: holding a string representing the status [successful|failure].
+- id: if successful, the id of the experience created.
+
 ## Login
 
 ~~~
