@@ -102,6 +102,7 @@ JSON with
 
 **Requested attributes**
 - cv_id
+- title
 - description
 - begin: a date **WARNING format: yyyy-mm-dd**.
 - end: a date **WARNING format: yyyy-mm-dd**.
@@ -118,6 +119,7 @@ JSON with
 
 **Requested attributes**
 - cv_id
+- title
 - description
 - begin: a date **WARNING format: yyyy-mm-dd**.
 - end: a date **WARNING format: yyyy-mm-dd**.
