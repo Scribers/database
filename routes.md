@@ -78,6 +78,21 @@ JSON with
 
 **Response**
 
-JSON with:
+JSON with
 - status: holding a string representing the status [successful|failure].
-- joboffer: a dictionary holding the job offer data requested.
+- joboffer: if successful, a dictionary holding the job offer data requested.
+
+## Get the user with the id in the url
+
+~~~
+users/<id>
+~~~
+
+**Url parameter**
+- <id>: the id of the user.
+
+**Response**
+
+JSON with
+- status: holding a string representing the status [successful|failure].
+- user: if successful, a dictionary holding the user data requested.
