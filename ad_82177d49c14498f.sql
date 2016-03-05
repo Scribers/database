@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: us-cdbr-iron-east-03.cleardb.net:3306
--- Generation Time: Mar 04, 2016 at 11:55 PM
+-- Generation Time: Mar 05, 2016 at 12:33 AM
 -- Server version: 5.5.45-log
 -- PHP Version: 5.5.32
 
@@ -39,7 +39,8 @@ CREATE TABLE IF NOT EXISTS `applications` (
 --
 
 CREATE TABLE IF NOT EXISTS `companies` (
-  `name` varchar(100) NOT NULL,
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
   `mail` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -77,19 +78,23 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Indexes for table `applications`
 --
 ALTER TABLE `applications`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fk_offer_id` (`offer_id`),
+  ADD KEY `fk_user_id` (`user_id`);
 
 --
 -- Indexes for table `companies`
 --
 ALTER TABLE `companies`
-  ADD PRIMARY KEY (`name`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `mail` (`mail`);
 
 --
 -- Indexes for table `offers`
 --
 ALTER TABLE `offers`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fk_company_id` (`company_id`);
 
 --
 -- Indexes for table `users`
@@ -108,6 +113,11 @@ ALTER TABLE `users`
 ALTER TABLE `applications`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
+-- AUTO_INCREMENT for table `companies`
+--
+ALTER TABLE `companies`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT for table `offers`
 --
 ALTER TABLE `offers`
@@ -117,6 +127,23 @@ ALTER TABLE `offers`
 --
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `applications`
+--
+ALTER TABLE `applications`
+  ADD CONSTRAINT `applications_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`),
+  ADD CONSTRAINT `applications_ibfk_1` FOREIGN KEY (`offer_id`) REFERENCES `offers` (`id`);
+
+--
+-- Constraints for table `offers`
+--
+ALTER TABLE `offers`
+  ADD CONSTRAINT `offers_ibfk_1` FOREIGN KEY (`company_id`) REFERENCES `companies` (`id`);
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
