@@ -1,4 +1,4 @@
-## POST requests
+# POST requests
 
 ## Create a new user with the name, password, email specified in the POST request attributes.
 
@@ -34,7 +34,7 @@ JSON with
 - status: holding a string representing the status [successful|failure].
 - id: if successful, the id of the company created.
 
-## Create a new job offer with the title in the POST request associated to the company_name in the POST request.
+## Create a new job offer with the title in the POST request associated to the company_id, the id of the company in the POST request.
 
 ~~~
 /offers/create
@@ -42,7 +42,7 @@ JSON with
 
 **Requested attributes**
 - title: The title of the offer to create.
-- company_name: The name of the company which creates the offer.
+- company_id: The id of the company which creates the offer.
 
 **Response**
 
@@ -65,3 +65,19 @@ JSON with
 - status: holding a string representing the status [successful|failure].
 - id: if successful, the id of the application created.
 
+# GET requests
+
+## Get the job offer with the id in the url.
+
+~~~
+/joboffers/<id>
+~~~
+
+**Url parameter**
+- <id>: the id of the job offer.
+
+**Response**
+
+JSON with:
+- status: holding a string representing the status [successful|failure].
+- joboffer: a dictionary holding the job offer data requested.
