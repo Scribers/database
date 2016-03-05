@@ -74,7 +74,7 @@ JSON with
 ~~~
 
 **Url parameter**
-- <id>: the id of the job offer.
+- id: the id of the job offer.
 
 **Response**
 
@@ -89,7 +89,7 @@ users/<id>
 ~~~
 
 **Url parameter**
-- <id>: the id of the user.
+- id: the id of the user.
 
 **Response**
 
