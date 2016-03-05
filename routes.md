@@ -37,7 +37,7 @@ JSON with
 - status: holding a string representing the status [successful|failure].
 - id: if successful, the id of the company created.
 
-## Create a new job offer with the title in the POST request associated to the company_id, the id of the company in the POST request.
+## Create a new job offer 
 
 ~~~
 /offers/create
@@ -46,6 +46,11 @@ JSON with
 **Requested attributes**
 - title: The title of the offer to create.
 - company_id: The id of the company which creates the offer.
+- title: The title of the offer.
+- type_id: The id of the type of the offer.
+- description: The description of the offer.
+- date: Creation date, **WARNING format: yyyy-mm-dd**
+- rome_id: The id of the romev3 code.
 
 **Response**
 
