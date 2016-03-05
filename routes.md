@@ -85,7 +85,7 @@ JSON with
 ## Get the user with the id in the url
 
 ~~~
-users/<id>
+/users/<id>
 ~~~
 
 **Url parameter**
@@ -96,3 +96,35 @@ users/<id>
 JSON with
 - status: holding a string representing the status [successful|failure].
 - user: if successful, a dictionary holding the user data requested.
+
+## Get the company with the id in the url
+
+~~~
+/companies/<id>
+~~~
+
+**Url parameter**
+- id: the id of the company.
+
+**Response**
+
+JSON with
+- status: holding a string representing the status [successful|failure].
+- company: if successful, a dictionary holding the company data requested.
+
+## Get the application with the id in the url
+
+~~~
+/applications/<id>
+~~~
+
+**Url parameter**
+- id: the id of the application.
+
+**Response**
+
+JSON with
+- status: holding a string representing the status [successful|failure].
+- company: if successful, a dictionary holding the application data requested.
+
+
