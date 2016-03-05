@@ -24,7 +24,7 @@ JSON with
 ~~~
 
 **Requested attributes**
-- company_name: The name of the company.
+- name: The name of the company.
 - mail: The mail for the company.
 - password: The password for the new company.
 
@@ -112,6 +112,21 @@ JSON with
 JSON with
 - status: holding a string representing the status [successful|failure].
 - content: if successful, a dictionary holding the user data requested.
+
+## Get the user's applications
+
+~~~
+/users/<id>/applications
+~~~
+
+**Url parameter**
+- id: the id of the user to get applications.
+
+**Response**
+
+JSON with
+- status: holding a string representing the status [successful|failure].
+- content: A list holding application datastructures.
 
 ## Get the company with the id in the url
 
