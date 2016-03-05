@@ -177,4 +177,24 @@ JSON with
 - status: holding a string representing the status [successful|failure].
 - content: if successful, a dictionary holding the application data requested.
 
+## Get the jobtypes
+
+~~~
+/jobtypes
+~~~
+
+## Get a jobtype with the id given.
+
+~~~
+/jobtypes/<id>
+~~~
+
+**Url parameter**
+- id: the id of the jobtype.
+
+**Response**
+
+JSON with
+- status: holding a string representing the status [successful|failure].
+- content: if successful, a dictionary holding the jobtype data requested.
 
