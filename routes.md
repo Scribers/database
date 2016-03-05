@@ -80,7 +80,7 @@ JSON with
 
 JSON with
 - status: holding a string representing the status [successful|failure].
-- joboffer: if successful, a dictionary holding the job offer data requested.
+- content: if successful, a dictionary holding the job offer data requested.
 
 ## Get the user with the id in the url
 
@@ -95,7 +95,7 @@ JSON with
 
 JSON with
 - status: holding a string representing the status [successful|failure].
-- user: if successful, a dictionary holding the user data requested.
+- content: if successful, a dictionary holding the user data requested.
 
 ## Get the company with the id in the url
 
@@ -110,7 +110,7 @@ JSON with
 
 JSON with
 - status: holding a string representing the status [successful|failure].
-- company: if successful, a dictionary holding the company data requested.
+- content: if successful, a dictionary holding the company data requested.
 
 ## Get the application with the id in the url
 
@@ -125,6 +125,6 @@ JSON with
 
 JSON with
 - status: holding a string representing the status [successful|failure].
-- company: if successful, a dictionary holding the application data requested.
+- content: if successful, a dictionary holding the application data requested.
 
 
