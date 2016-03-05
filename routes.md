@@ -56,7 +56,7 @@ JSON with
 /applications/create 
 ~~~
 **Requested attributes**
-- joboffer_id: The id of the job offer to apply for.
+- offer_id: The id of the job offer to apply for.
 - user_id: The id of the user applying for the company.
 
 **Response**
