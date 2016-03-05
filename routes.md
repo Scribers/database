@@ -287,3 +287,33 @@ JSON with
 JSON with
 - status: holding a string representing the status [successful|failure].
 - content: if successful, a dictionary holding the romev3 data requested.
+
+## cvs
+
+~~~
+/cvs
+~~~
+
+~~~
+/cvs/<id>
+~~~
+
+## Formations
+
+~~~
+/formations
+~~~
+
+~~~
+/formations/<id>
+~~~
+
+## Experiences
+
+~~~
+/experiences
+~~~
+
+~~~
+/experiences/<id>
+~~~
