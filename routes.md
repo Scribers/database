@@ -17,7 +17,7 @@ JSON with
 - status: holding a string representing the status [successful|failure].
 - id: if successful, the id of the user created.
 
-## Create a new company with the company_name, mail and password specified in the POST request attributes.
+## Create a new company with the company_name, mail, password, description, short_description and details specified in the POST request attributes.
 
 ~~~
 /companies/create
@@ -27,6 +27,9 @@ JSON with
 - name: The name of the company.
 - mail: The mail for the company.
 - password: The password for the new company.
+- description: The description of the enterprise (complete).
+- short_description: A short description of the enterprise.
+- details: Coordinates, etc
 
 **Response**
 
