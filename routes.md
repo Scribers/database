@@ -65,6 +65,22 @@ JSON with
 - status: holding a string representing the status [successful|failure].
 - id: if successful, the id of the application created.
 
+## Login
+
+~~~
+/login
+~~~
+
+**Requested attributes**
+- mail: The mail of the user to log in.
+- password: The password of the user to log in.
+
+**Response**
+
+JSON with:
+- status: holding a string representing the status [successful|failure].
+- id: if successful, the if of the user logged in.
+
 # GET requests
 
 ## Get the job offer with the id in the url.
