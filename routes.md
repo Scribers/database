@@ -53,7 +53,7 @@ JSON with
 - status: holding a string representing the status [successful|failure].
 - id: if successful, the id of the offer created.
 
-## Create a new application for the joboffer_id and the user_id in the POST request.
+## Create a new application for the joboffer_id, the user_id and the cover_letter in the POST request.
 
 ~~~
 /applications/create 
@@ -61,6 +61,7 @@ JSON with
 **Requested attributes**
 - offer_id: The id of the job offer to apply for.
 - user_id: The id of the user applying for the company.
+- cover_letter: The cover_letter.
 
 **Response**
 
