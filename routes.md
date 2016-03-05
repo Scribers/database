@@ -128,6 +128,21 @@ JSON with
 - status: holding a string representing the status [successful|failure].
 - content: if successful, a dictionary holding the company data requested.
 
+## Get all offers for a company
+
+~~~
+/companies/<id>/offers
+~~~
+
+**Url parameter**
+- id: the id of the company.
+
+**Response**
+
+JSON with
+- status: holding a string representing the status [successful|failure].
+- content: if successful, an array with offers datastructures inside.
+
 ## Get the application with the id in the url
 
 ~~~
