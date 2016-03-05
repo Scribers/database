@@ -86,7 +86,7 @@ JSON with:
 ## Get the job offer with the id in the url.
 
 ~~~
-/joboffers/<id>
+/offers/<id>
 ~~~
 
 **Url parameter**
